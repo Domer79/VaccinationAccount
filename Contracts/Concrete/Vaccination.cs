@@ -7,14 +7,24 @@ using System.Threading.Tasks;
 
 namespace Contracts.Concrete
 {
-    public class Vaccination
+    public class Entity
+    {
+        public Entity()
+        {
+            Id = new Guid();
+        }
+
+        public Guid Id { get; set; }
+    }
+
+    public class Vaccination: Entity
     {
         public string Preparation { get; set; }
-        public string Approval { get; set; }
+        public bool Approval { get; set; }
         public DateTime Date { get; set; }
     }
 
-    public class Patient
+    public class Patient: Entity
     {
         public string Name { get; set; }
         public string LastName { get; set; }
