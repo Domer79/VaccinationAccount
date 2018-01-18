@@ -13,6 +13,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dal", "Dal\Dal.csproj", "{1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitTestApi", "GitTestApi\GitTestApi.csproj", "{CBE878AD-B9FE-457F-95AE-6248209B9B7D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configs", "Configs", "{421A05A4-37B0-4045-9E83-E75BDC4E6D07}"
+	ProjectSection(SolutionItems) = preProject
+		configs\debug.connections.config = configs\debug.connections.config
+		configs\release.connections.config = configs\release.connections.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
